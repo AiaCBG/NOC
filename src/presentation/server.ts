@@ -1,6 +1,6 @@
-import { FileSystemDatasource } from "../domain/infrastructure/datasources/file-sytem.datasource";
-import { LogRepositoryImpl } from "../domain/infrastructure/repositories/log.repository.impl";
 import { CheckService } from "../domain/use-cases/checks/check-service";
+import { FileSystemDatasource } from "../infrastructure/datasources/file-sytem.datasource";
+import { LogRepositoryImpl } from "../infrastructure/repositories/log.repository.impl";
 import { CronService } from "./cron/cron-service";
 
 const fileSystemRepository = new LogRepositoryImpl(
